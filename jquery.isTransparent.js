@@ -1,11 +1,7 @@
 /*!
- * jQuery isTransparent - v1.0 - 2013-10-15
- *
- * Returns true or false based on image transparency.
- *
- * Author: Wyatt Kirby <wyatt@genius.com>
- * Licensed under the MIT license
- */
+ * jQuery isTransparent - v1.1 - 2013-10-15          *
+ * Author: Wyatt Kirby <wyatt@genius.com>            *
+ * Licensed under the MIT license                    */
 
 ;(function($, window, document, undefined) {
     'use strict';
@@ -30,6 +26,21 @@
         this.image = element;
         this.isTransparent = false;
         this.options = $.extend(true, {}, $.fn.isTransparent.defaults, options);
+
+        // Variable Check
+        // ---------------------------
+
+        if ( this.options.quality < 0 ) {
+            this.options.quality = 0;
+        } else if ( this.options.quality > 10 )  {
+            this.options.quality = 10;
+        }
+
+        if ( this.options.opacityThreshold < 0 ) {
+            this.options.opacityThreshold = 0;
+        } else if ( this.options.opacityThreshold > 255 ) {
+            this.options.opacityThreshold = 255;
+        }
 
         this.init();
     }

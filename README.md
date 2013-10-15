@@ -45,6 +45,10 @@ Include the jQuery library (version 1.7 or newer) and isTransparent plugin files
 
 ## Changelog
 
+### Version 1.1
+
+* Add variable protection so options can't be set to invalid values.
+
 ### Version 1.0
 
 * Initial release
