@@ -1,13 +1,10 @@
 # isTransparent
 
-Backstretch is a simple jQuery plugin that allows you to add a dynamically-resized, slideshow-capable background image to any page or element. The image will stretch to fit the page/element, and will automatically resize as the window/element size changes.
-## Demo
+isTransparent is a simple jQuery plugin used to determine whether or not an image can be considered visible to users based on the image data's color and opacity — not the CSS settings for `visibility` and `opacity`.
 
-There are a couple of examples included with this package, or feel free to check it out live [on the project page itself](http://srobbin.com/jquery-plugins/backstretch/).
+## Usage
 
-## Setup
-
-Include the jQuery library (version 1.7 or newer) and Backstretch plugin files in your webpage (preferably at the bottom of the page, before the closing BODY tag):
+Include the jQuery library (version 1.7 or newer) and isTransparent plugin files at the bottom of your page, before the closing `<body>` tag.
 
 ```html
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
