@@ -7,7 +7,7 @@ isTransparent is a simple jQuery plugin used to determine whether or not an imag
 Include the jQuery library (version 1.7 or newer) and isTransparent plugin files at the bottom of your page, before the closing `<body>` tag.
 
 ```html
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="jquery.isTransparent.min.js"></script>
 
 <script>
